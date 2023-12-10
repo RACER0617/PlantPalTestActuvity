@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+<FloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    android:src="@android:drawable/ic_dialog_email"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Сколько времени вы готовы уделять уходу за растениями в неделю?"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/answerOption1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Менее 30 минут" />
+
+        <RadioButton
+            android:id="@+id/answerOption1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 минут - 1 час" />
+
+        <RadioButton
+            android:id="@+id/answerOption1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-2 часа" />
+
+        <RadioButton
+            android:id="@+id/answerOption1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Более 2 часов" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questionTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Какое освещение преобладает в помещении, где будут находиться растения?"
+        android:textSize="18sp"
+        android:layout_below="@id/answerRadioGroup1"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView2"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/answerOption2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Яркое солнечное освещение" />
+
+        <RadioButton
+            android:id="@+id/answerOption2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рассеянное светлое освещение" />
+
+        <RadioButton
+            android:id="@+id/answerOption2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Искусственное освещение" />
+
+        <RadioButton
+            android:id="@+id/answerOption2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Темное освещение" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questionTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Какая температура поддерживается в помещении, где будут находиться растения?"
+        android:textSize="18sp"
+        android:layout_below="@id/answerRadioGroup2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView3"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/answerOption3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Высокая (более 25°C)" />
+
+        <RadioButton
+            android:id="@+id/answerOption3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Умеренная (18-25°C)" />
+
+        <RadioButton
+            android:id="@+id/answerOption3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Низкая (менее 18°C)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        android:layout_below="@id/answerRadioGroup3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
